@@ -13,7 +13,7 @@ if (!stripeKey) {
   throw new Error("STRIPE_KEY is not defined in .env or Firebase config.");
 }
 
-const stripe = new Stripe(stripeKey); // ✅ now stripeKey is defined
+const stripe = new Stripe(stripeKey); // now stripeKey is defined
 
 const app = express();
 app.use(cors({ origin: true }));
